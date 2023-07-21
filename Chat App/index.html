@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- form container will be visible whenever we will  open chat app  -->
+    <form class="form-username" id="test">
+        <h1>Join ChatRoom</h1>
+        <p>UserName</p>
+        <input type="text" id="username-input" placeholder="Type here...">
+        <button id="join-btn" type="submit">Join Now</button>
+    </form>
+
+    <!--  chatroom container will be hidden initially, it will be visible after username input name and click on button  -->
+    <div class="chatroom-container">
+        <div class="chatroom-header">Chat Area</div>
+            <div class="messages" id="message-container">
+                <div class="messagesent">Hey</div>
+                <div class="message">Hi!!</div>
+            </div>
+            <div class="sendArea">
+                <input type="text" id="message-input" placeholder=" Type message here..">
+                <button id="send-button">Send</button>
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
